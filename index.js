@@ -17,6 +17,9 @@ client.once('ready', () => {
 // ===== メッセージ =====
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return;
+  if (message.author.id !== "1444298930929012857") return;
+
+  // 以下既存のコード
 
   const text = message.content;
 
