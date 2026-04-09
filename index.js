@@ -39,6 +39,7 @@ client.on('messageCreate', async (message) => {
     };
 
     tasks.push(task);
+scheduleReminder(task, message);
 
     await message.reply(`✅ ${name} を登録しました`);
     analyzeAndSuggest(message);
