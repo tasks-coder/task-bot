@@ -5,7 +5,7 @@ const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
 });
 
-const TOKEN = "6w";
+const TOKEN = process.env.DISCORD_TOKEN;
 
 let tasks = [];
 
